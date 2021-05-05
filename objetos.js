@@ -443,7 +443,7 @@ console.log(veloster)
 veloster = { ...veloster, portas: 4, carro } //altera propriedades existentes
 
 
-//Object.is(item1, item2) - verifica se itens sao OS MESMOS (não é possuirem o mesmo conteudo) e retorna true ou false
+Object.is(item1, item2) // - verifica se itens sao OS MESMOS (não é possuirem o mesmo conteudo) e retorna true ou false
 
 const carros1 = ['Uno de firma']
 const carros2 = ['Uno de firma']
