@@ -39,3 +39,22 @@ console.log(Array.from(palavra))
 
 arrayRandom.splice(index, quantiaPraSerRemovida) //remove itens do array
 let index = arrayRandom.indexOf('palavraRandom') //encontra o index de palavraRandom no array
+
+
+//Função auto-executavel (ponto e virgula obrigatorio no let)
+let number = 1;
+
+(function() {
+    console.log('sla')
+})()
+
+
+//Operador ternário
+var nome = 'joao'
+
+nome === 'joao' ? console.log('rs') : console.log('nah')
+
+
+//identifica o tipo do item
+console.log(typeof "joao")
+
