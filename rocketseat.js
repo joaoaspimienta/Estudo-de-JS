@@ -58,3 +58,7 @@ nome === 'joao' ? console.log('rs') : console.log('nah')
 //identifica o tipo do item
 console.log(typeof "joao")
 
+
+//Deleta propriedade de um objeto
+delete rpgCharacter.level
+
