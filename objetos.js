@@ -485,3 +485,5 @@ quadrado.lados = 10 //não funciona, rs, lados continua sendo 4
 //Lista todas as propriedades de algo
 console.log(Object.getOwnPropertyNames(String.prototype))
 console.log(Object.getOwnPropertyNames(Array.prototype))
+
+
