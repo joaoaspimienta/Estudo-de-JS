@@ -8,4 +8,7 @@ img {
     max-width: 100%;
 }
 
-
+/*Altura da tela toda*/
+.classeRandom {
+    height: 100vh;
+}
