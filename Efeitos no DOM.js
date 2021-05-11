@@ -48,6 +48,14 @@ scrollSuave();
 import * as initScrollSuave from '.modules/scroll-suave.js'
 initScrollSuave();
 
+//Como exportar mais de um ao mesmo tempo
+//Exporta normal, nao coloca default no export
+
+//Como importar mais de um ao mesmo tempo
+import { scrollSuave, scrollAnimacao } from './scroll.js'
+scrollSuave()
+scrollAnimacao()
+
 
 //É possível exportar qualquer coisa
 //configuracao.js
@@ -56,11 +64,13 @@ export const ano = 2000
 export const obj = {nome: 'ford'}
 export const str = 'frase'
 export class Carro {}
+
+//Importar tudo de uma pagina
 //script.js
-import * as conf from './configuracao.js'
-conf.str
-conf.obj
-conf.ano
+import * as teste from './teste.js'
+teste.str
+teste.obj
+teste.ano
 
 //Variaveis criadas dentro de um modulo ficam apenas no escopo dele
 
