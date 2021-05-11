@@ -30,20 +30,24 @@ divs.forEach((div) => {
 
 /*Modulos*/
 
-//index.html
+//Exportar e importar modulos
+
+//Adicione type="module" na tag script do html
 <script type="module" src="js/script.js"></script>
 
-//scroll-initScrollSuave.js:
-export default function initScrollSuave(){
-    //código aqui dentro
+//Use export na frente da função que deseja exportar
+export default function scrollSuave(){
+  //...
 }
 
-//script.js:
-import initScrollSuave from './modules/scroll-suave.js'
-initScrollSuave();
-//ou
+//Use import nome from arquivo.js para importar
+import scrollSuave from './scroll-suave.js'
+scrollSuave();
+
+//ou para importar tudo
 import * as initScrollSuave from '.modules/scroll-suave.js'
 initScrollSuave();
+
 
 //É possível exportar qualquer coisa
 //configuracao.js
@@ -60,6 +64,4 @@ conf.ano
 
 //Variaveis criadas dentro de um modulo ficam apenas no escopo dele
 
-
 //Se colocar 'use strict' no topo de um arquivo, ele entra no modo restrito
-
