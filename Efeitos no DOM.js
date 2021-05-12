@@ -75,3 +75,7 @@ teste.ano
 //Variaveis criadas dentro de um modulo ficam apenas no escopo dele
 
 //Se colocar 'use strict' no topo de um arquivo, ele entra no modo restrito
+
+//Troque a posição para fixed, absolute ou relative para alterar o posicionamento de elementos na pagina
+
+//box-sizing: border-box; ajuda a manter margens em volta dos objetos quando eles estouram o container
