@@ -81,3 +81,12 @@ teste.ano
 //box-sizing: border-box; ajuda a manter margens em volta dos objetos quando eles estouram o container
 
 //Quer mudar a posição de uma imagem/botao dentro de um container? Coloque a posição do container como relative e do elemento que quer mover como absolute
+
+
+/*Novo event listener*/
+//Executa um codigo ao passar o mouse por cima ao inves de com um clique
+item.addEventListener('mouseover', onMouseOver)
+
+function onMouseOver(event) {
+    console.log(event)
+}
