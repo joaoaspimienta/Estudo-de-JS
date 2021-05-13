@@ -79,3 +79,5 @@ teste.ano
 //Troque a posição para fixed, absolute ou relative para alterar o posicionamento de elementos na pagina
 
 //box-sizing: border-box; ajuda a manter margens em volta dos objetos quando eles estouram o container
+
+//Quer mudar a posição de uma imagem/botao dentro de um container? Coloque a posição do container como relative e do elemento que quer mover como absolute
