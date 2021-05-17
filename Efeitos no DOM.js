@@ -90,3 +90,23 @@ item.addEventListener('mouseover', onMouseOver)
 function onMouseOver(event) {
     console.log(event)
 }
+
+
+//Como usar um item de fora do escopo da sua função 
+//(e tambem mostra que voce pode usar um objeto no lugar de uma função se ele tiver o handleEvent como um dos metodos dele)
+
+function onMouseOver(event) {
+    const nome = 'EMIYA'
+    
+    onMouseLeave.nome = nome;
+    this.addEventListener('mouseleave', onMouseLeave)
+}
+
+const onMouseLeave = {
+    handleEvent(){
+     alert(this.nome);
+    }
+}
+
+//...remove o event listener
+this.element.removeEventListener('mouseleave', onMouseLeave)
