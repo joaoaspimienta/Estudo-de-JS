@@ -110,3 +110,42 @@ const onMouseLeave = {
 
 //...remove o event listener
 this.element.removeEventListener('mouseleave', onMouseLeave)
+
+//Como criar uma dropdown list
+//coloque um ul/li dentro de outro li
+//coloque position relative no container e position absolute no ul da lista de itens a "cair"
+
+
+//Como prevenir comportamento padrão
+const dropdownMenus = document.querySelectorAll('[data-dropdown]')
+
+dropdownMenus.forEach(menu => {
+    menu.addEventListener('click', handleClick)
+})
+
+function handleClick(event) {
+    event.preventDefault()
+}
+
+//Duas maneiras diferentes de associar dois tipos de eventListeners ao mesmo item
+dropdownMenus.forEach(menu => {
+    menu.addEventListener('click', handleClick)
+    menu.addEventListener('touchstart', handleClick)
+})
+
+dropdownMenus.forEach(menu => {
+    ['click', 'touchstart'].forEach(eventoRolou => {
+    menu.addEventListener(eventoRolou, handleClick)
+    })
+})
+
+
+//Como fazer uma animação tanto com hover quanto com classList.add (css e js)
+[data-dropdown]:hover .dropdown-menu,
+[data-dropdown].active .dropdown-menu {
+    display: block;
+    animation: show-up .3s forwards;
+}
+
+//Como selecionar o html:
+const html = document.documentElement
