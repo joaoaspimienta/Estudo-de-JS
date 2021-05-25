@@ -150,19 +150,28 @@ dropdownMenus.forEach(menu => {
 //Como selecionar o html:
 const html = document.documentElement
 
+//Html = document.documentElement;
 
 //Como colocar tempo para rodar um codigo
 function imprimeTempo(tempo){
     console.log(tempo)
 }
-
 setTimeout(imprimeTempo, 10000, '10 segundos')
 
 //setTimeout com mais de um argumento
 function imprimeTempo(tempo, dia){
     console.log(`já se passaram ${tempo} segundos no dia ${dia}`)
 }
-
 setTimeout(imprimeTempo, 10000, '10 segundos', 15)
 
-//Html = document.documentElement;
+
+//setTimeout com função anonima
+
+setTimeout(function(){
+    console.log('fodas')
+}, 5000)
+
+//ou
+setTimeout(() => {
+    console.log('fodas')
+}, 5000)
