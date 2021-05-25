@@ -164,3 +164,5 @@ function imprimeTempo(tempo, dia){
 }
 
 setTimeout(imprimeTempo, 10000, '10 segundos', 15)
+
+//Html = document.documentElement;
