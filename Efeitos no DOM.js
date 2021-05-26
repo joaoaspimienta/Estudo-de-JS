@@ -175,3 +175,13 @@ setTimeout(function(){
 setTimeout(() => {
     console.log('fodas')
 }, 5000)
+
+
+//setInterval
+
+function pintaQuadrado(classe){
+    const sla = document.querySelector('.sla')
+    sla.classList.toggle(classe)
+  }
+  
+  setInterval(pintaQuadrado, 2000, 'azul')
