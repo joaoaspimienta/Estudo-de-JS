@@ -185,3 +185,32 @@ function pintaQuadrado(classe){
   }
   
   setInterval(pintaQuadrado, 2000, 'azul')
+
+  //Diz pro google que o conteudo do botão hamburguer aí tá oculto ((apenas para acessibilidade))
+  aria-expanded="false"
+
+  //Diz qual ID o objeto que contem essa "classe" está controlando (apenas para acessibilidade)
+  aria-controls='menu'
+
+
+  //position: static por algum motivo ao inves de ficar por cima dos itens desceu eles quando os itens com position static apareceram na lista (estavam escondidos antes), pesquisar como position static funciona, mas aparentemente ele salta os outros itens e nao fica por cima deles
+
+
+  //Ao usar setTimeOut, o que voce passou dentro dele só ocorrerá após o final da fase de bubbling (mesmo colocando o tempo do setTimeOut em 0), isso pode evitar certos glitches
+
+
+  //Como animar um elemento de "before"
+  .js [data-menu="button"]::before {
+    margin-right: 4px;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 12px;
+    background: #fff;
+    box-shadow: 0 4px #fff, 0 -4px #fff;
+    transition: transform .3s;
+}
+
+    .js [data-menu="button"].active::before {
+        transform: rotate(90deg);
+}
