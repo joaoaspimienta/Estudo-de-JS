@@ -214,3 +214,31 @@ function pintaQuadrado(classe){
     .js [data-menu="button"].active::before {
         transform: rotate(90deg);
 }
+
+//Como obter datas
+const data = new Date()
+
+const diasSemana = funcionamento.dataset.semana.split(',').map(Number)
+const horarioSemana = funcionamento.dataset.horario.split(',').map(Number)
+
+//Como pegar o dia de hoje
+const dataAgora = new Date()
+const diaAgora = dataAgora.getDay()
+
+
+//Verificar quantos dias pro natal
+const agora = new Date();
+const futuro = new Date('Dec 24 2021 23:59')
+
+function transformarDias(tempo) {
+    return tempo / (24 * 60 * 60 * 1000)
+}
+
+const diasAgora = transformarDias(agora.getTime())
+const diasFuturo = transformarDias(futuro.getTime())
+
+
+//Como retornar numeros de um dataset separados e como numeros mesmo
+<li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sexta das 8 às 18</li>
+const funcionamento = document.querySelector('[data-semana]')
+const diasSemana = funcionamento.dataset.semana.split(',').map(Number)
